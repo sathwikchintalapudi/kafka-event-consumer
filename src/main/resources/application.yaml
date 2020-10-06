@@ -1,0 +1,7 @@
+spring:
+  kafka:
+    consumer:
+      group-id: library-events-consumers-group
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      key-deserializer: org.apache.kafka.common.serialization.IntegerDeserializer
+      bootstrap-servers: localhost:9093, localhost:9094
